@@ -7,7 +7,7 @@ Consult three frontier AI models on a problem, find consensus, and make a decisi
 | Provider  | Model              | CLI Command                      |
 |-----------|--------------------|----------------------------------|
 | Anthropic | Claude Opus 4.6    | `claude --print --model opus`    |
-| Google    | Gemini 2.5 Pro     | `gemini -m gemini-2.5-pro`       |
+| Google    | Gemini 3.1 Pro     | `gemini -m gemini-3.1-pro-preview` |
 | OpenAI    | GPT-5.3-Codex      | `codex -q`                       |
 
 ## Process
@@ -55,9 +55,9 @@ Launch THREE Task tool calls in a SINGLE message (subagent_type: `shell` for all
    PROMPT
    ```
 
-2. **Gemini 2.5 Pro** (Google)
+2. **Gemini 3.1 Pro** (Google)
    ```bash
-   gemini -m gemini-2.5-pro <<'PROMPT'
+   gemini -m gemini-3.1-pro-preview <<'PROMPT'
    <the shared prompt>
    PROMPT
    ```
@@ -91,7 +91,7 @@ Once all responses are back, produce this output:
 **Claude Opus 4.6:**
 [2-4 bullet summary of key points and recommendation]
 
-**Gemini 2.5 Pro:**
+**Gemini 3.1 Pro:**
 [2-4 bullet summary of key points and recommendation]
 
 **GPT-5.3-Codex:**
